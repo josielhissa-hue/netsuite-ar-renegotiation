@@ -1,0 +1,5 @@
+node_modules/
+.attach_pin
+.DS_Store
+*.log
+project.json
