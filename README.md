@@ -61,7 +61,7 @@ tests/                       Node test runner with mocked N/ modules
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-user>/netsuite-ar-renegotiation.git
+git clone https://github.com/josielhissa-hue/netsuite-ar-renegotiation.git
 cd netsuite-ar-renegotiation
 npm test                     # runs the engine, user event and map/reduce tests
 suitecloud project:deploy    # after account setup, see docs/installation.md
