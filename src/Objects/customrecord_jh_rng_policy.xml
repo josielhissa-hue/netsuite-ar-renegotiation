@@ -1,0 +1,186 @@
+<customrecordtype scriptid="customrecord_jh_rng_policy">
+  <recordname>JH Renegotiation Policy</recordname>
+  <accesstype>CUSTRECORDENTRYPERM</accesstype>
+  <allowattachments>T</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquicksearch>T</allowquicksearch>
+  <enablemailmerge>F</enablemailmerge>
+  <includename>F</includename>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <showid>T</showid>
+  <shownotes>T</shownotes>
+  <customrecordcustomfields>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_penalty_pct">
+      <fieldtype>PERCENT</fieldtype>
+      <label>Late penalty (%)</label>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_late_rate">
+      <fieldtype>PERCENT</fieldtype>
+      <label>Late interest per month (%)</label>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_late_mode">
+      <fieldtype>TEXT</fieldtype>
+      <label>Late interest mode (SIMPLE or COMPOUND)</label>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_fin_rate">
+      <fieldtype>PERCENT</fieldtype>
+      <label>Maximum financing rate per month (%)</label>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_max_installments">
+      <fieldtype>INTEGER</fieldtype>
+      <label>Maximum installments</label>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_min_down_pct">
+      <fieldtype>PERCENT</fieldtype>
+      <label>Minimum down payment (%)</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_discount_base">
+      <fieldtype>TEXT</fieldtype>
+      <label>Discount base (CHARGES or TOTAL)</label>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_default_method">
+      <fieldtype>TEXT</fieldtype>
+      <label>Default method (PRICE, SAC or FLAT)</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_tiers">
+      <fieldtype>CLOBTEXT</fieldtype>
+      <label>Approval tiers (JSON)</label>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+      <help>Example: [{"level":1,"maxDiscountPct":5,"maxInstallments":6,"roles":[1030]}]</help>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_grace_days">
+      <fieldtype>INTEGER</fieldtype>
+      <label>Grace days before breach</label>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_lead_days">
+      <fieldtype>INTEGER</fieldtype>
+      <label>Bill installments this many days before due</label>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_rr_item">
+      <fieldtype>SELECT</fieldtype>
+      <label>Renegotiated receivable item</label>
+      <selectrecordtype>-10</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_interest_item">
+      <fieldtype>SELECT</fieldtype>
+      <label>Financing interest item</label>
+      <selectrecordtype>-10</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_acc_rr">
+      <fieldtype>SELECT</fieldtype>
+      <label>Renegotiated receivables account</label>
+      <selectrecordtype>-112</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_acc_penalty">
+      <fieldtype>SELECT</fieldtype>
+      <label>Penalty income account</label>
+      <selectrecordtype>-112</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_acc_late">
+      <fieldtype>SELECT</fieldtype>
+      <label>Late interest income account</label>
+      <selectrecordtype>-112</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_acc_discount">
+      <fieldtype>SELECT</fieldtype>
+      <label>Renegotiation discount account</label>
+      <selectrecordtype>-112</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngp_notify_employee">
+      <fieldtype>SELECT</fieldtype>
+      <label>Collections contact</label>
+      <selectrecordtype>-4</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+  </customrecordcustomfields>
+</customrecordtype>

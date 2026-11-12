@@ -1,0 +1,286 @@
+<customrecordtype scriptid="customrecord_jh_rng_agreement">
+  <recordname>JH Renegotiation Agreement</recordname>
+  <accesstype>CUSTRECORDENTRYPERM</accesstype>
+  <allowattachments>T</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquicksearch>T</allowquicksearch>
+  <enablemailmerge>F</enablemailmerge>
+  <includename>F</includename>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <showid>T</showid>
+  <shownotes>T</shownotes>
+  <customrecordcustomfields>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_customer">
+      <fieldtype>SELECT</fieldtype>
+      <label>Customer</label>
+      <selectrecordtype>-2</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_subsidiary">
+      <fieldtype>SELECT</fieldtype>
+      <label>Subsidiary</label>
+      <selectrecordtype>-117</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_currency">
+      <fieldtype>SELECT</fieldtype>
+      <label>Currency</label>
+      <selectrecordtype>-122</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_policy">
+      <fieldtype>SELECT</fieldtype>
+      <label>Policy</label>
+      <selectrecordtype>[customrecord_jh_rng_policy]</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_status">
+      <fieldtype>TEXT</fieldtype>
+      <label>Status</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_method">
+      <fieldtype>TEXT</fieldtype>
+      <label>Amortization method</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_as_of">
+      <fieldtype>DATE</fieldtype>
+      <label>As-of date</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_open_amount">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Open amount</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_penalty">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Penalty</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_late_interest">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Late interest</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_discount">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Discount</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_base_amount">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Renegotiated balance</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_down_payment">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Down payment</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_financed">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Financed amount</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_fin_interest">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Financing interest</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_total_due">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Total due</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_installments">
+      <fieldtype>INTEGER</fieldtype>
+      <label>Installments</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_rate">
+      <fieldtype>PERCENT</fieldtype>
+      <label>Financing rate per month (%)</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_approval_level">
+      <fieldtype>INTEGER</fieldtype>
+      <label>Approval level</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_requested_by">
+      <fieldtype>SELECT</fieldtype>
+      <label>Requested by</label>
+      <selectrecordtype>-4</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_approved_by">
+      <fieldtype>SELECT</fieldtype>
+      <label>Decided by</label>
+      <selectrecordtype>-4</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_approved_on">
+      <fieldtype>DATE</fieldtype>
+      <label>Decided on</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_reason">
+      <fieldtype>TEXTAREA</fieldtype>
+      <label>Decision notes</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_snapshot">
+      <fieldtype>CLOBTEXT</fieldtype>
+      <label>Calculation snapshot (JSON)</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>HIDDEN</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_fingerprint">
+      <fieldtype>TEXT</fieldtype>
+      <label>Integrity fingerprint</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_credit_memo">
+      <fieldtype>SELECT</fieldtype>
+      <label>Credit memo</label>
+      <selectrecordtype>-30</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_journal">
+      <fieldtype>SELECT</fieldtype>
+      <label>Charges journal</label>
+      <selectrecordtype>-30</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_down_invoice">
+      <fieldtype>SELECT</fieldtype>
+      <label>Down payment invoice</label>
+      <selectrecordtype>-30</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rnga_exec_log">
+      <fieldtype>TEXTAREA</fieldtype>
+      <label>Execution log</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+  </customrecordcustomfields>
+</customrecordtype>

@@ -1,0 +1,13 @@
+{
+  "name": "netsuite-ar-renegotiation",
+  "version": "1.0.0",
+  "description": "Audit-ready renegotiation of overdue customer invoices for NetSuite (JH Finance Controls Framework, module 1)",
+  "license": "MIT",
+  "author": "Josiel Hissa <josiel.hissa@jhissa.com.br> (https://linkedin.com/in/josielhissa)",
+  "scripts": {
+    "test": "node --test tests/engine.test.js tests/ue.test.js tests/mr.test.js",
+    "check": "for f in src/FileCabinet/SuiteScripts/jh_ar_renegotiation/*.js; do node --check \"$f\" || exit 1; done"
+  },
+  "keywords": ["netsuite", "suitescript", "accounts-receivable", "collections", "internal-controls", "sox", "erp"],
+  "engines": { "node": ">=18" }
+}

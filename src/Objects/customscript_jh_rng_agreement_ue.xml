@@ -1,0 +1,17 @@
+<usereventscript scriptid="customscript_jh_rng_agreement_ue">
+  <name>JH Renegotiation Agreement Controls</name>
+  <scriptfile>[/SuiteScripts/jh_ar_renegotiation/jh_ue_rng_agreement.js]</scriptfile>
+  <isinactive>F</isinactive>
+  <notifyowner>T</notifyowner>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_jh_rng_agreement_ue">
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <status>RELEASED</status>
+      <title>JH Renegotiation Agreement Controls</title>
+      <recordtype>[customrecord_jh_rng_agreement]</recordtype>
+      <allroles>T</allroles>
+      <executioncontext>ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|GETTING_STARTED|MAPREDUCE|OCRPLUGIN|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|RESTWEBSERVICES|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBSERVICES|WORKBOOKBUILDER|WORKFLOW</executioncontext>
+    </scriptdeployment>
+  </scriptdeployments>
+</usereventscript>

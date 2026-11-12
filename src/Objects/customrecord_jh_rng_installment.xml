@@ -1,0 +1,90 @@
+<customrecordtype scriptid="customrecord_jh_rng_installment">
+  <recordname>JH Renegotiation Installment</recordname>
+  <accesstype>CUSTRECORDENTRYPERM</accesstype>
+  <allowattachments>T</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquicksearch>T</allowquicksearch>
+  <enablemailmerge>F</enablemailmerge>
+  <includename>F</includename>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <showid>T</showid>
+  <shownotes>T</shownotes>
+  <customrecordcustomfields>
+    <customrecordcustomfield scriptid="custrecord_jh_rngi_agreement">
+      <fieldtype>SELECT</fieldtype>
+      <label>Agreement</label>
+      <selectrecordtype>[customrecord_jh_rng_agreement]</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>T</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngi_number">
+      <fieldtype>INTEGER</fieldtype>
+      <label>Number</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngi_due_date">
+      <fieldtype>DATE</fieldtype>
+      <label>Due date</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngi_principal">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Principal</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngi_interest">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Interest</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngi_amount">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Installment amount</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngi_status">
+      <fieldtype>TEXT</fieldtype>
+      <label>Status</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngi_invoice">
+      <fieldtype>SELECT</fieldtype>
+      <label>Invoice</label>
+      <selectrecordtype>-30</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+  </customrecordcustomfields>
+</customrecordtype>

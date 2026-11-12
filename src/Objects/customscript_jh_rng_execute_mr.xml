@@ -1,0 +1,21 @@
+<mapreducescript scriptid="customscript_jh_rng_execute_mr">
+  <name>JH Renegotiation Execution</name>
+  <scriptfile>[/SuiteScripts/jh_ar_renegotiation/jh_mr_rng_execute.js]</scriptfile>
+  <isinactive>F</isinactive>
+  <notifyowner>T</notifyowner>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_jh_rng_mr_agreement">
+      <fieldtype>TEXT</fieldtype>
+      <label>Agreement internal ID</label>
+      <ismandatory>F</ismandatory>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_jh_rng_execute_mr">
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>JH Renegotiation Execution</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

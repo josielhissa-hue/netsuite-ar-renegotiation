@@ -1,0 +1,6 @@
+{
+  "customerId": "1234",
+  "invoiceIds": ["5501", "5502"],
+  "asOf": "2026-11-12",
+  "terms": { "discountPct": 5, "downPayment": 2000, "installments": 6, "firstDueDate": "2026-12-10", "method": "PRICE", "ratePct": 1.5 }
+}

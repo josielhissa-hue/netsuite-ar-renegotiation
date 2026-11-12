@@ -1,0 +1,90 @@
+<customrecordtype scriptid="customrecord_jh_rng_source">
+  <recordname>JH Renegotiation Source Invoice</recordname>
+  <accesstype>CUSTRECORDENTRYPERM</accesstype>
+  <allowattachments>T</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquicksearch>T</allowquicksearch>
+  <enablemailmerge>F</enablemailmerge>
+  <includename>F</includename>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <showid>T</showid>
+  <shownotes>T</shownotes>
+  <customrecordcustomfields>
+    <customrecordcustomfield scriptid="custrecord_jh_rngs_agreement">
+      <fieldtype>SELECT</fieldtype>
+      <label>Agreement</label>
+      <selectrecordtype>[customrecord_jh_rng_agreement]</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>T</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngs_invoice">
+      <fieldtype>SELECT</fieldtype>
+      <label>Invoice</label>
+      <selectrecordtype>-30</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngs_tranid">
+      <fieldtype>TEXT</fieldtype>
+      <label>Invoice number</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngs_due_date">
+      <fieldtype>DATE</fieldtype>
+      <label>Original due date</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngs_amount_due">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Amount due</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngs_days_overdue">
+      <fieldtype>INTEGER</fieldtype>
+      <label>Days overdue</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngs_penalty">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Penalty</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_jh_rngs_late_interest">
+      <fieldtype>CURRENCY</fieldtype>
+      <label>Late interest</label>
+      <ismandatory>F</ismandatory>
+      <displaytype>INLINE</displaytype>
+      <storevalue>T</storevalue>
+      <isparent>F</isparent>
+      <showinlist>T</showinlist>
+    </customrecordcustomfield>
+  </customrecordcustomfields>
+</customrecordtype>

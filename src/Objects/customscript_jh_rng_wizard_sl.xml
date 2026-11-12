@@ -1,0 +1,23 @@
+<suitelet scriptid="customscript_jh_rng_wizard_sl">
+  <name>JH Renegotiation Wizard</name>
+  <scriptfile>[/SuiteScripts/jh_ar_renegotiation/jh_sl_rng_wizard.js]</scriptfile>
+  <isinactive>F</isinactive>
+  <notifyowner>T</notifyowner>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_jh_rng_sl_policy">
+      <fieldtype>SELECT</fieldtype>
+      <label>Renegotiation policy</label>
+      <selectrecordtype>[customrecord_jh_rng_policy]</selectrecordtype>
+      <ismandatory>F</ismandatory>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_jh_rng_wizard_sl">
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <status>RELEASED</status>
+      <title>JH Renegotiation Wizard</title>
+      <allroles>F</allroles>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

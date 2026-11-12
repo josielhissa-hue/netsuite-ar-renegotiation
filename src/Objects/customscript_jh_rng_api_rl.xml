@@ -1,0 +1,23 @@
+<restlet scriptid="customscript_jh_rng_api_rl">
+  <name>JH Renegotiation Simulation API</name>
+  <scriptfile>[/SuiteScripts/jh_ar_renegotiation/jh_rl_rng_api.js]</scriptfile>
+  <isinactive>F</isinactive>
+  <notifyowner>T</notifyowner>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_jh_rng_rl_policy">
+      <fieldtype>SELECT</fieldtype>
+      <label>Renegotiation policy</label>
+      <selectrecordtype>[customrecord_jh_rng_policy]</selectrecordtype>
+      <ismandatory>F</ismandatory>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_jh_rng_api_rl">
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <status>RELEASED</status>
+      <title>JH Renegotiation Simulation API</title>
+      <allroles>F</allroles>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

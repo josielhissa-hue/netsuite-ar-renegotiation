@@ -1,0 +1,14 @@
+<scheduledscript scriptid="customscript_jh_rng_monitor_ss">
+  <name>JH Renegotiation Monitor</name>
+  <scriptfile>[/SuiteScripts/jh_ar_renegotiation/jh_ss_rng_monitor.js]</scriptfile>
+  <isinactive>F</isinactive>
+  <notifyowner>T</notifyowner>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_jh_rng_monitor_ss">
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>JH Renegotiation Monitor</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

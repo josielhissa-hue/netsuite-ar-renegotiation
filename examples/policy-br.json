@@ -1,0 +1,17 @@
+{
+  "_note": "Example only. Brazilian consumer contracts cap the late penalty at 2% (CDC art. 52 §1); confirm rules for your contracts with counsel.",
+  "penaltyPct": 2,
+  "lateRatePct": 1,
+  "lateMode": "SIMPLE",
+  "financingRatePct": 1.5,
+  "maxInstallments": 12,
+  "minDownPct": 10,
+  "discountBase": "CHARGES",
+  "defaultMethod": "PRICE",
+  "graceDays": 15,
+  "leadDays": 10,
+  "tiers": [
+    { "level": 1, "maxDiscountPct": 10, "maxInstallments": 6, "roles": [1030] },
+    { "level": 2, "maxDiscountPct": 50, "maxInstallments": 12, "roles": [1031, 3] }
+  ]
+}

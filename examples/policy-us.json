@@ -1,0 +1,17 @@
+{
+  "_note": "Example only. Late fees and interest limits vary by state and contract; confirm with counsel.",
+  "penaltyPct": 1.5,
+  "lateRatePct": 1,
+  "lateMode": "SIMPLE",
+  "financingRatePct": 1,
+  "maxInstallments": 12,
+  "minDownPct": 20,
+  "discountBase": "CHARGES",
+  "defaultMethod": "PRICE",
+  "graceDays": 10,
+  "leadDays": 15,
+  "tiers": [
+    { "level": 1, "maxDiscountPct": 25, "maxInstallments": 6, "roles": [1030] },
+    { "level": 2, "maxDiscountPct": 100, "maxInstallments": 12, "roles": [1031] }
+  ]
+}
